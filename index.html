@@ -18,41 +18,44 @@
 
         <section class="container">
           <nav class="navbar navbar-expand-lg py-5">
-            <div class="container-fluid">
-              <a class="navbar-brand fw-bold fs-2 pe-5 me-5" href="#">Education & Fun</a>
-              <button class="navbar-toggler border border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse ps-5 ms-4" id="navbarText">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link fw-semibold" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link fw-semibold" href="#">Cources</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link fw-semibold" href="#">Deals</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link fw-semibold" href="#">Success</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link fw-semibold" href="#">About</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link fw-semibold" href="#">Register</a>
-                  </li>
-                </ul>
+            
+            
+              <div class="container-fluid">
+                <a class="navbar-brand fw-bold fs-2 pe-5 me-5" href="#">Education & Fun</a>
+                <button class="navbar-toggler border border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse ps-5 ms-4" id="navbarText">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link fw-semibold" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link fw-semibold" href="#">Cources</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link fw-semibold" href="#">Deals</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link fw-semibold" href="#">Success</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link fw-semibold" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link fw-semibold" href="#">Register</a>
+                    </li>
+                  </ul>
+                  
+                </div>
                 
               </div>
+              <div class="d-flex flex-end">
+                  
+                <button class="btn btn-outline-primary fw-bold px-4 py-2 opacity-75 d-none d-md-block">Register</button>
               
-            </div>
-            <div>
-                
-              <button class="btn btn-outline-primary fw-bold px-4 py-2 opacity-75 d-none d-md-block">Register</button>
-            
-          </div>
+              </div>
+          
           </nav>
         </section>
 
@@ -208,8 +211,30 @@
               
             </div>
             <div class="d-lg-flex align-items-lg-center">
-              <button class="btn btn-outline-primary text-primary text-opacity-75 bg-light fw-bolder border border-0 px-4 py-2">Register Now</button>
+              <button class="btn btn-outline-primary text-primary text-opacity-75 bg-light fw-bolder border border-0 px-4 py-2" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Register Now</button>
+              <!-- Button trigger modal -->
+              
+
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Do you want to register ?</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <i class="fa-solid fa-registered fs-5"></i>egister now to enroll our courses
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
+                      <button type="button" class="btn btn-primary">Yes</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
+            
           </div>
         
       </section>
@@ -278,7 +303,7 @@
         </div>
       </section>
 
-      <section class="container mt-5 pt-5 mb-5 pb-5">
+      <section class="container mt-5 pt-5 mb-5 pb-5 d-none d-lg-block d-xl-block d-xxl-none">
         <h1 class="h1 fw-bold d-flex justify-content-center pb-3 lh-sm">Trusted by over 800+ companies</h1>
         <div class="companies">
           <img src="images/company/company-1.png" alt="">
